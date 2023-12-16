@@ -1,0 +1,583 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22 <html lang="en">\par
+  <head>\par
+    <meta charset="UTF-8" />\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\par
+    <link rel="stylesheet" href="style.css" />\par
+    <link\par
+      rel="stylesheet"\par
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"\par
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="\par
+      crossorigin="anonymous"\par
+      referrerpolicy="no-referrer"/>\par
+    <title>Amazon</title>\par
+  </head>\par
+  <style>\par
+  * \{\par
+    margin: 0;\par
+    font-family: Arial, Helvetica, sans-serif;\par
+    border: border-box;\par
+  \}\par
+  \par
+  .navbar \{\par
+    height: 60px;\par
+    background-color: #0f1111;\par
+    color: white;\par
+    display: flex;\par
+    align-items: center;\par
+    justify-content: space-evenly;\par
+  \}\par
+  \par
+  .navlogo \{\par
+    height: 50px;\par
+    width: 100px;\par
+  \}\par
+  \par
+  .logo \{\par
+    background-image: url(https://www.amazon.com/ref=nav_logo);\par
+    height: 50px;\par
+    width: 100%;\par
+    background-size: cover;\par
+  \}\par
+  .border \{\par
+    border: 2px solid transparent;\par
+    border-radius: 2px;\par
+  \}\par
+  .border:hover \{\par
+    border: 1.5px solid white;\par
+  \}\par
+  \par
+  .addfirst \{\par
+    color: #cccccc;\par
+    font-size: 12px;\par
+    margin-left: 16px;\par
+    align-items: center;\par
+  \}\par
+  \par
+  .addsecond \{\par
+    font-size: 14px;\par
+    margin-left: 3px;\par
+    font-weight: 700;\par
+    align-items: center;\par
+  \}\par
+  \par
+  .addicon \{\par
+    display: flex;\par
+    align-items: center;\par
+  \}\par
+  \par
+  .border2:hover \{\par
+    border: 1.5px solid white;\par
+    height: 50px;\par
+  \}\par
+  \par
+  .search1 \{\par
+    display: flex;\par
+    align-items: center;\par
+    margin-left: 15px;\par
+    background-color: rgb(255, 52, 52);\par
+    height: 40px;\par
+    width: 620px;\par
+    border-radius: 6px;\par
+    text-align: center;\par
+  \}\par
+  \par
+  .nav-search \{\par
+    display: flex;\par
+    height: 40px;\par
+    width: 620px;\par
+    border-top-left-radius: 4px;\par
+    border-bottom-left-radius: 4px;\par
+    text-align: center;\par
+    background-color: #ff8484;\par
+    margin-left: 15px;\par
+    border-radius: 4px;\par
+    justify-content: space-evenly;\par
+  \}\par
+  \par
+  .search-option1 \{\par
+    background-color: #f3f3f3;\par
+    border-top-left-radius: 4px;\par
+    border-bottom-left-radius: 4px;\par
+    width: 50px;\par
+    text-align: center;\par
+    border: none;\par
+  \}\par
+  \par
+  input \{\par
+    width: 100%;\par
+    font-size: 1rem;\par
+    border: none;\par
+  \}\par
+  .search-input\{\par
+      border: none;\par
+  \}\par
+  .search-icon \{\par
+    width: 45px;\par
+    display: flex;\par
+    justify-content: center;\par
+    align-items: center;\par
+    background-color: rgba(238, 156, 4, 0.849);\par
+    font-size: 1.2rem;\par
+    border-top-right-radius: 4px;\par
+    border-bottom-right-radius: 4px;\par
+    color: #0f1111;\par
+  \}\par
+  \par
+  .lanoption \{\par
+    font-weight: bolder;\par
+    background: transparent;\par
+    color: white;\par
+    border: none;\par
+  \}\par
+  \par
+  .languageoption \{\par
+    height: 50px;\par
+    width: 74px;\par
+    display: flex;\par
+    align-items: center;\par
+    padding-left: 6px;\par
+  \}\par
+  .american \{\par
+    background-image: url(Images/america.webp);\par
+    background-size: cover;\par
+    height: 15px;\par
+    width: 20px;\par
+  \}\par
+  \par
+  .hello \{\par
+    font-size: 12px;\par
+    margin-left: 4px;\par
+  \}\par
+  \par
+  .account-sign \{\par
+    font-size: 14px;\par
+    font-weight: bold;\par
+    background: transparent;\par
+    color: white;\par
+    border: none;\par
+  \}\par
+  \par
+  .return \{\par
+    font-size: 12px;\par
+  \}\par
+  \par
+  .order \{\par
+    font-size: 14px;\par
+    font-weight: bold;\par
+  \}\par
+  \par
+  .cart i \{\par
+    font-size: 30px;\par
+  \}\par
+  \par
+  .cart \{\par
+    font-size: 0.8rem;\par
+    font-weight: 700;\par
+  \}\par
+  \par
+  .nav-search:hover \{\par
+    border: 2px solid orange;\par
+  \}\par
+  \par
+  .second-nav \{\par
+    height: 42px;\par
+    background-color: #222f3d;\par
+    align-items: center;\par
+    color: white;\par
+    justify-content: space-evenly;\par
+    display: flex;\par
+  \}\par
+  \par
+  .second-nav p \{\par
+    display: inline;\par
+  \}\par
+  \par
+  .allicon \{\par
+    padding-left: 8px;\par
+    align-items: center;\par
+    display: flex;\par
+    width: 58px;\par
+    height: 36px;\par
+  \}\par
+  \par
+  .list \{\par
+    font-weight: 700;\par
+    margin: 2px;\par
+    font-size: 14px;\par
+  \}\par
+  \par
+  .panel-ops \{\par
+    width: 70%;\par
+    font-size: 0.8rem;\par
+  \}\par
+  \par
+  .ptag \{\par
+    margin-left: 15px;\par
+  \}\par
+  .deals \{\par
+    font-size: 0.9rem;\par
+    font-weight: 700;\par
+  \}\par
+  \par
+  .main\{\par
+      background-image: url(https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg);\par
+      height: 400px;\par
+      background-size: cover;\par
+      display: flex;\par
+      justify-content: center;\par
+      align-items: flex-end;\par
+  \}\par
+  \par
+  .msg\{\par
+      font-size: 14px;\par
+      background-color: #f5f6f6;\par
+      width: 80%;\par
+      height: 40px;\par
+      display: flex;\par
+      align-items: center;\par
+      justify-content: center;\par
+      margin-bottom: 25px;\par
+  \}\par
+  \par
+  .msg a \{\par
+      color: #007185;\par
+      text-decoration: none;\par
+  \} \par
+  \par
+  .shop\{\par
+      display: flex;\par
+      flex-wrap: wrap;\par
+      justify-content: space-evenly;\par
+      background-color: #e2e7e6;\par
+  \}\par
+  \par
+  .box\{\par
+      height: 400px;\par
+      width: 23%;\par
+      background-color: white;\par
+      padding: 20px 0px 15px;\par
+      margin: 8px;\par
+  \}\par
+  \par
+  .shop1\{\par
+      font-size: 16px;\par
+  \}\par
+  \par
+  .box1-img\{\par
+      height: 300px;\par
+      background-size: cover;\par
+      margin-top: 1rem;\par
+      margin-bottom: 1rem;\par
+  \}\par
+  \par
+  .box1-content\{\par
+      margin-left: 1rem;\par
+      margin-right: 1rem;\par
+  \}\par
+  \par
+  .shop1 p a\{\par
+        text-decoration: none;\par
+        color: #007185;\par
+        font-size: 15px;\par
+  \}\par
+  \par
+  footer\{\par
+    margin-top: 15px;\par
+  \}\par
+  .firstpanel\{\par
+    height: 50px;\par
+    background-color: #232F3E;\par
+    color: white;\par
+    font: 13px;\par
+    align-items: center;\par
+    justify-content: center;\par
+    display: flex;\par
+  \}\par
+  \par
+  .secondpanel\{\par
+    background-color: #333;\par
+    color: white;\par
+    height: 400px;\par
+    display: flex;\par
+    justify-content: space-evenly;\par
+  \}\par
+  \par
+  ul\{\par
+    margin-top: 20px;\par
+  \}\par
+  ul a \{\par
+    display: block;\par
+    font-size: 14px;\par
+    margin-top: 15px;\par
+    color: #dddddd;\par
+  \}\par
+  \par
+  .thirdpanel\{\par
+    background-color: #333;\par
+    color: white;\par
+    border-top: 0.5px solid #848688;\par
+    height: 70px;\par
+    display: flex;\par
+    align-items: center;\par
+    justify-content: center;\par
+  \}\par
+  \par
+  .logo\{\par
+    background-image: rl(https://www.amazon.com/ref=nav_logo);\par
+    height: 50px;\par
+    width: 100%;\par
+    background-size: cover;\par
+    width: 100px;\par
+  \}\par
+  \par
+  .select-op\{\par
+    margin-left: 55px;\par
+    display: flex;\par
+  \}\par
+  \par
+  .select-op select\{\par
+    background: transparent;\par
+    color: #cccccc;\par
+    font-size: 13px;\par
+    text-decoration: none;\par
+    margin-left: 5px;\par
+    border: 1px solid #848688;\par
+    padding: 6px 18px 6px 8px;\par
+    border-radius: 3px;\par
+  \}\par
+  \par
+  .panel4\{\par
+    background-color: #333;\par
+    color: white;\par
+    height: 80px;\par
+    font-size: 12px;\par
+    text-align: center;\par
+    /*display: flex;\par
+    align-items: center;\par
+    justify-content: center;*/\par
+  \}\par
+  \par
+  .page\{\par
+    text-align: center;\par
+    padding-top: 25px;\par
+  \}\par
+  .page a \{\par
+    text-decoration: none;\par
+    color: white;\par
+  \par
+  \}\par
+  \par
+  .copyright\{\par
+    margin-top: 5px;\par
+  \}\par
+</style>\par
+  <body>\par
+    <header>\par
+      <div class="navbar">\par
+        <div class="navlogo">\par
+          <div class="logo border"></div>\par
+        </div>\par
+        <div class="navadd border">\par
+          <p class="addfirst icon" >Deliver to</p>\par
+          <div class="addicon">\par
+            <i class="fa-solid fa-location-dot icon"></i>\par
+            <p class="addsecond icon">India</p>\par
+          </div>\par
+        </div>\par
+        \par
+        <div class="nav-search">\par
+            <select class="search-option1">\par
+                <option value="All" class="search-option2">All</option>\par
+            </select>\par
+            <input type="text" placeholder="Search Amazon" class="search-input">\par
+            <div class="search-icon">\par
+                <i class="fa-solid fa-magnifying-glass"></i>\par
+            </div>\par
+          \par
+           </div>\par
+           <div class="languageoption border">\par
+            <div class="american"></div>\par
+            <select class="lanoption">\par
+                <option value="lan">EN</option>\par
+            </select>\par
+           </div>\par
+           <div class="sign border">\par
+            <p class="hello">\par
+                Hello, sign in\par
+            </p>\par
+            <div class="account">\par
+              <select class="account-sign">\par
+                <option value="Account">Account & Lists</option>\par
+              </select>\par
+            </div>\par
+            <div>\par
+            </div>\par
+           </div>\par
+           <div class="box6 border">\par
+            <p class="return">\par
+              Returns\par
+            </p>\par
+            <p class="order">\par
+              & Orders\par
+            </p>\par
+           </div>\par
+           <div class="cart border">\par
+            <i class="fa-solid fa-cart-shopping"></i>\par
+            cart\par
+           </div>\par
+      </div>\par
+      <div class="second-nav">\par
+        <div class="allicon border">\par
+          <i class="fa-solid fa-bars"></i>\par
+         <p class="list">All</p>\par
+        </div>\par
+        <div class="panel-ops">\par
+          <p class="ptag border">Today's Deals</p>\par
+          <p class="ptag border">Customer Service</p>\par
+          <p class="ptag border">Registry</p> \par
+          <p class="ptag border">Gift Cards</p>\par
+          <p class="ptag border"> Sell</p>\par
+        </div>\par
+        <div class="deals">\par
+          <p>Shop deals in Electronics</p>\par
+        </div>\par
+      </div>\par
+    </header>\par
+    <main>\par
+      <div class="main">\par
+        <div class="msg">\par
+          <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>\par
+        </div>\par
+      </div>\par
+      <div class="shop">\par
+        <div class="shop1 box">\par
+          <div class="box1-content">\par
+          <h2>Toys Under $30</h2>\par
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg);"></div>\par
+          <p><a href="#">Shop now</a></p>\par
+        </div>\par
+        </div>\par
+        <div class="shop2 box">\par
+          <div class="box1-content">\par
+            <h2>Deals & Promotions</h2>\par
+            <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg);"></div>\par
+            <p><a href="#">Shop now</a></p>\par
+          </div>\par
+        </div>\par
+        <div class="shop3 box">\par
+          <div class="box1-content">\par
+            <h2>Health & Personal Care</h2>\par
+            <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg);"></div>\par
+            <p><a href="#">Shop now</a></p>\par
+          </div>\par
+        </div>\par
+        <div class="shop4 box">\par
+          <div class="box1-content">\par
+            <h2>New arrivals in Toys</h2>\par
+            <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg);"></div>\par
+            <p><a href="#">Shop now</a></p>\par
+          </div>\par
+        </div>        <div class="shop1 box">\par
+          <div class="box1-content">\par
+          <h2>For your Fitness Needs</h2>\par
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg);"></div>\par
+          <p><a href="#">Shop now</a></p>\par
+        </div>\par
+        </div>\par
+        <div class="shop2 box">\par
+          <div class="box1-content">\par
+            <h2>Kindle E readers</h2>\par
+            <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Desktop_Dash_Kindle_1x._SY304_CB639752818_.jpg);"></div>\par
+            <p><a href="#">Shop now</a></p>\par
+          </div>\par
+        </div>\par
+        <div class="shop3 box">\par
+          <div class="box1-content">\par
+            <h2>Home refresh ideas</h2>\par
+            <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/home/THILGMA/SpringEvent2023/XCM_CUTTLE_1559454_3018199_379x304_1X_en_US._SY304_CB592739737_.jpg);"></div>\par
+            <p><a href="#">Shop now</a></p>\par
+          </div>\par
+        </div>\par
+        <div class="shop4 box">\par
+          <div class="box1-content">\par
+            <h2>Shop Laptops & Tablets</h2>\par
+            <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg);"></div>\par
+            <p><a href="#">Shop now</a></p>\par
+          </div>\par
+        </div>\par
+      </div>\par
+    </main>\par
+    <footer>\par
+      <div class="firstpanel">\par
+        Back to top\par
+      </div>\par
+      <div class="secondpanel">\par
+        <ul>\par
+         <p>Get to Know Us</p>\par
+         <a>Careers</a>\par
+         <a>Blog</a>\par
+         <a>About Amazon</a>\par
+         <a>Investor Relations</a>\par
+         <a>Amazon Devices</a>\par
+         <a>Amazon Science</a>\par
+        </ul>\par
+        <ul>\par
+          <p>Make Money with Us</p>\par
+          <a>Sell products on Amazon</a>\par
+          <a>Sell on Amazon Business</a>\par
+          <a>Sell apps on Amazon</a>\par
+          <a>Become an Affiliate</a>\par
+          <a>Self-Publish with Us</a>\par
+          <a>Host an Amazon Hub</a>\par
+          <a>\'9bSee More Make Money with Us</a>\par
+         </ul>\par
+         <ul>\par
+         <p>Amazon Payment Products</p>\par
+         <a>Amazon Business Card</a>\par
+         <a>Shop with Points</a>\par
+         <a>Reload Your Balance</a>\par
+         <a>Amazon Currency Converter</a>\par
+        </ul>\par
+          <ul>\par
+          <p>Let Us Help You</p>\par
+          <a>Amazon and COVID-19</a>\par
+          <a>Your Account</a>\par
+          <a>Your Orders</a>\par
+          <a>Shipping Rates & Policies</a>\par
+          <a>Returns & Replacements</a>\par
+          <a>Manage Your Content and Devices</a>\par
+          <a>Amazon Assistant</a>\par
+          <a>Help</a>\par
+         </ul>\par
+      </div>\par
+      <div class="thirdpanel">\par
+        <div class="logo"></div>\par
+        <div class="select-op">\par
+        <select name="" id="" class="sele">\par
+          <option value="En">English</option>\par
+        </select>\par
+        <select name="" id="" class="sele">\par
+          <option value="1">$ USD - U.S. Dollar</option>\par
+        </select>\par
+        \par
+        <select name="" id="" class="sele">\par
+          <option value="4"> United states</option>\par
+        </select>\par
+        </div>\par
+      </div>\par
+      <div class="panel4">\par
+        <div class="page">\par
+          <a href="">Conditions of Use</a>\par
+            <a href="">Privacy Notice</a>\par
+            <a href="">Your Ads Privacy Choices</a>\par
+        </div>\par
+        <div class="copyright">\par
+          \'a9 1996-2023, Amazon.com, Inc. or its affiliates\par
+        </div>\par
+      </div>\par
+    </footer>\par
+  </body>\par
+</html>\par
+}
+ 
